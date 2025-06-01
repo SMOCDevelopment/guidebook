@@ -13,7 +13,7 @@ A clean and sleek GUI interface designed for FivePD servers — but easily custo
   - Keybinds
   - And more!
 - 🎯 Fully customizable for any server type
-- 🎥 Video demo available in discord.
+- 🎥 Video Demo - https://www.youtube.com/watch?v=34lgCC5vnSw
 
 ---
 
