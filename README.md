@@ -25,5 +25,8 @@ A clean and sleek GUI interface designed for FivePD servers — but easily custo
    ```cfg
    ensure guidebook
 
+## Enable In Game
+-> Press F7 to view the GUI
+
 # Do you need any help?
 > Do not WORRY! I got your back https://discord.gg/pHsTfwAXbF
