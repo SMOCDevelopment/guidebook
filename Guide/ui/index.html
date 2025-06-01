@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FivePD Guidebook</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #rules ul {
+            list-style: decimal inside;
+            padding-left: 0;
+            margin-bottom: 1em;
+        }
+
+        #rules ul li {
+            margin-bottom: 0.7em;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        #rules ul li strong {
+            color: #003366;
+        }
+
+        #rules p.discord-link {
+            margin-top: 1.2em;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        #rules p.discord-link a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        #rules p.discord-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="display:none;" onload="init()">
+
+    <div class="handbook" role="dialog" aria-modal="true" aria-labelledby="guidebook-title">
+        <nav class="tabs" role="tablist">
+            <button class="tab-button active" role="tab" aria-selected="true" aria-controls="start" id="tab-start"
+                onclick="switchTab('start', this)">
+                <img src="https://cdn3.emoji.gg/emojis/2138-books.png" alt="" class="tab-icon" /> Getting Started
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="duties" id="tab-duties"
+                onclick="switchTab('duties', this)">
+                <img src="https://cdn3.emoji.gg/emojis/47765-secguide-folder.png" alt="" class="tab-icon" /> Duties
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="equipment" id="tab-equipment"
+                onclick="switchTab('equipment', this)">
+                <img src="https://discords.com/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Femojis%2F1199479456654442607.png%3Fv%3D1&w=64&q=75"
+                    alt="" class="tab-icon" /> Equipment
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="communication"
+                id="tab-communication" onclick="switchTab('communication', this)">
+                <img src="https://discords.com/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Femojis%2F934188336363474985.png%3Fv%3D1&w=64&q=75"
+                    alt="" class="tab-icon" /> Communication
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="rules" id="tab-rules"
+                onclick="switchTab('rules', this)">
+                <img src="https://cdn3.emoji.gg/emojis/94979-discordrules.png" alt="" class="tab-icon" /> Rules
+            </button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="Other Keys" id="tab-otherkeys"
+                onclick="switchTab('Other Keys', this)">
+                <img src="https://discords.com/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Femojis%2F972483752968224878.png%3Fv%3D1&w=64&q=75"
+                    alt="" class="tab-icon" /> Keybinds
+            </button>
+        </nav>
+
+        <section class="content">
+            <article id="start" class="tab active" role="tabpanel" aria-labelledby="tab-start">
+                <h2 id="guidebook-title">Getting Started</h2>
+                <ol>
+                    <li>Get your department uniform by typing <strong>/eup</strong>.</li>
+                    <li>Access your patrol vehicle by typing <strong>/vs</strong>.</li>
+                    <li>Press <strong>F11</strong> to open the FivePD menu and go <strong>on duty</strong>. Then,
+                        navigate down a tab to equip your patrol loadout.</li>
+                    <li>Customize your vehicle by pressing <strong>F1</strong>, then go to Vehicle Options → Extras to
+                        toggle lightbars, push bars, and other equipment.</li>
+                </ol>
+
+                <h2 id="additional-controls-title">Additional Controls</h2>
+                <ol start="5">
+                    <li>Use the <strong>X</strong> key to interact with AI pedestrians and vehicles during patrol.</li>
+                    <li>Press <strong>G</strong> to open the dispatch menu for requesting towing, EMS, coroner services,
+                        taxis, and more.</li>
+                    <li>When a call comes in, press <strong>Y</strong> to accept it. To deny a call, simply ignore it.
+                    </li>
+                    <li>Open your computer (MDT) by pressing <strong>B</strong>. You must be in your patrol vehicle and
+                        on duty to access it.</li>
+                    <li>Press <strong>Z</strong> to open the secondary menu for additional options like managing calls
+                        or other tasks.</li>
+                </ol>
+            </article>
+
+
+            <article id="duties" class="tab" role="tabpanel" aria-labelledby="tab-duties" hidden>
+                <h2>Duties</h2>
+                <ol>
+                    <li><strong>Patrol Officer:</strong> Respond to calls, perform traffic stops, and patrol zones.</li>
+                    <li><strong>K9 Unit:</strong> Partner with a K9 for tracking and searches.</li>
+                    <li><strong>Traffic Enforcement:</strong> Enforce traffic laws, perform DUI stops, and monitor
+                        speeding.</li>
+                    <li><strong>SWAT:</strong> Handle high-risk situations (Requires Permission).</li>
+                </ol>
+                <p>
+                    <img src="https://vectorified.com/images/tips-icon-33.png" alt="Tip"
+                        style="width:20px; vertical-align:middle; margin-right:8px;" />
+                    Please contact a Field Training Officer (FTO) or a senior officer if you are unsure about your
+                    duties or need assistance with a call.
+                </p>
+
+                <hr />
+
+                <h2>Jurisdictions</h2>
+                <ul>
+                    <li><strong>County Units (Blaine County):</strong> Patrol rural and unincorporated areas of Blaine
+                        County.</li>
+                    <li><strong>City Units (Los Santos):</strong> Serve within the city limits of Los Santos.</li>
+                    <li><strong>State Units (State of San Andreas):</strong> Operate across the entire state, including
+                        highways and interstates.</li>
+                    <li><strong>Fire / EMS Units:</strong> Respond to medical emergencies and fires within your assigned
+                        department’s coverage area.</li>
+                    <li><strong>Federal Units:</strong> Operate under federal jurisdiction; stick to your assigned
+                        federal division responsibilities.</li>
+                </ul>
+                <p>
+                    <img src="https://discords.com/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Femojis%2F937017222428250152.gif%3Fv%3D1&w=64&q=75"
+                        alt="Tip" style="width:20px; vertical-align:middle; margin-right:8px;" /> State Police Units -
+                    Please stick to the highways and interstates, as most units are assigned to a designated
+                    jurisdiction
+                </p>
+            </article>
+
+            <article id="equipment" class="tab" role="tabpanel" aria-labelledby="tab-equipment" hidden>
+                <h2>Equipment</h2>
+                <ul>
+                    <li><strong>Radio:</strong> Always keep your radio on to maintain communication.</li>
+                    <li><strong>Weapons:</strong> Use only approved firearms and follow department guidelines.</li>
+                    <li><strong>Tools:</strong> Use spike strips, breathalyzers, and flashlights properly.</li>
+                </ul>
+                <p>
+                    <img src="https://vectorified.com/images/tips-icon-33.png" alt="Tip"
+                        style="width:20px; vertical-align:middle; margin-right:8px;" />
+                    Maintain your equipment to ensure readiness at all times.
+                </p>
+            </article>
+
+            <article id="communication" class="tab" role="tabpanel" aria-labelledby="tab-communication" hidden>
+                <h2>Communication</h2>
+
+                <section>
+                    <h3>Radio Protocol</h3>
+                    <ul>
+                        <li><strong>Radio Protocol:</strong> Use clear and concise language; identify yourself and your
+                            unit.</li>
+                        <li><strong>Codes:</strong> Familiarize yourself with department codes for efficient
+                            communication.</li>
+                        <li><strong>Emergency Calls:</strong> Prioritize emergency traffic and avoid unnecessary
+                            chatter.</li>
+                    </ul>
+                    <p>
+                        <img src="https://vectorified.com/images/tips-icon-33.png" alt="Tip"
+                            style="width:20px; vertical-align:middle; margin-right:8px;" />
+                        Always confirm receipt of messages to avoid confusion.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Radio Frequencies</h3>
+                    <ul class="frequency-list">
+                        <li><strong>STATE:</strong> <span class="freq-box">1.23</span></li>
+                        <li><strong>COUNTY:</strong> <span class="freq-box">0.22</span></li>
+                        <li><strong>CITY:</strong> <span class="freq-box">4.9</span></li>
+                        <li><strong>FEDERAL:</strong> <span class="freq-box">9.00</span></li>
+                        <li><strong>FIRE/MEDICAL:</strong> <span class="freq-box">0.12</span></li>
+                        <li><strong>SADOT:</strong> <span class="freq-box">10.23</span></li>
+                        <li><strong>STAFF:</strong> <span class="freq-box staff">99.99</span><br>
+                            <p>
+                                <img src="https://vectorified.com/images/tips-icon-33.png" alt="Tip"
+                                    style="width:20px; vertical-align:middle; margin-right:8px;" />
+                                This frequency is to get in touch with staff members. Use it only when necessary.
+                                Spamming this will result in a ban.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+
+
+            <article id="rules" class="tab" role="tabpanel" aria-labelledby="tab-rules" hidden>
+                <h2>Rules</h2>
+                <ul>
+                    <li><strong>No RDM (Random Deathmatch):</strong> Killing players without proper roleplay is
+                        prohibited.</li>
+                    <li><strong>No VDM (Vehicle Deathmatch):</strong> Using vehicles to cause harm without roleplay is
+                        forbidden.</li>
+                    <li><strong>Stay In Character:</strong> Maintain your officer persona during duty at all times.</li>
+                    <li><strong>Radio Procedures:</strong> Follow all radio communication protocols and chain of
+                        command.</li>
+                    <li><strong>Respect Others:</strong> Treat all players with respect and professionalism.</li>
+                    <li><strong>Roleplay Realism:</strong> Follow realistic police procedures to enhance immersion.</li>
+                </ul>
+
+                <p class="discord-link">
+                    Full rules are available on our
+                    <a href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener noreferrer">Discord
+                        server</a>.
+                </p>
+
+                <p style="margin-top: 1em; font-style: italic; font-size: 0.9em;">
+                    If the link doesn't redirect, copy and paste it manually:<br />
+                    <a href="https://discord.gg/YOUR_INVITE" target="_blank"
+                        rel="noopener noreferrer">https://discord.gg/YOUR_INVITE</a>
+                </p>
+            </article>
+
+            <article id="Other Keys" class="tab" role="tabpanel" aria-labelledby="tab-otherkeys" hidden>
+                <h2>Other Keys</h2>
+
+                <section>
+                    <h3>Game Keybinds</h3>
+                    <ul>
+                        <li><strong>F1:</strong> Opens vMenu</li>
+                        <li><strong>F3:</strong> Toggle your bodycam</li>
+                        <li><strong>F11:</strong> Open the FivePD menu</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Vehicle Keybinds</h3>
+                    <ul>
+                        <li><strong>F5:</strong> Toggle your radar</li>
+                        <li><strong>L:</strong> Toggle your spotlight</li>
+                        <li><strong>M:</strong> Vehicle Options (open doors, clean, repair)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Special Access (Supervisors Only)</h3>
+                    <ul>
+                        <li><strong>F2:</strong> No Clip</li>
+                    </ul>
+                </section>
+            </article>
+            <footer style="text-align:center; font-size:12px; margin-top:20px;">
+                Developed by <a href="https://discord.gg/pHsTfwAXbF" target="_blank" rel="noopener noreferrer">smoc
+                    development</a>
+            </footer>
+
+        </section>
+
+        <button aria-label="Close Guidebook" class="close" onclick="closeBook()">×</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
